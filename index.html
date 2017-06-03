@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <div class="container" id="cover">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Local Weather Checker</h1>
+                <p id="display"></p>
+                <img src="" alt="The image representation of your area" id="weatherImg">
+                <button id="changeCF" class="btn btn-info" onclick="change();">Change to Fahrenheit - &#8457</button>
+                <!--
+                   <div class="input-group col-sm-6">
+                    <span class="input-group-addon" id="basic-addon1">Enter a City</span>
+                    <input id="cityName" type="text" class="form-control" aria-describedby="basic-addon1">
+                    <button class="btn btn-success" onclick="searchByCity();"> Search</button>
+                </div>
+                -->
+                <script>
+                    getLocation();
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
